@@ -34,6 +34,10 @@ class MainFragment : Fragment() {
                 findNavController().navigate(R.id.action_mainFragment_to_historyFragment)
                 return true
             }
+            R.id.rekomendasi_menu -> {
+                findNavController().navigate(R.id.action_mainFragment_to_rekomendasiFragment)
+                return true
+            }
         }
         return super.onOptionsItemSelected(item)
     }

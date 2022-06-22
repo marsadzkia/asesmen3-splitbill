@@ -15,6 +15,9 @@
         <action
             android:id="@+id/action_mainFragment_to_historyFragment"
             app:destination="@id/historyFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_rekomendasiFragment"
+            app:destination="@id/rekomendasiFragment" />
     </fragment>
     <fragment
         android:id="@+id/aboutFragment"
@@ -24,4 +27,9 @@
         android:id="@+id/historyFragment"
         android:name="org.d3if2107.splitbill.history.HistoryFragment"
         tools:layout="@layout/fragment_history" />
+    <fragment
+        android:id="@+id/rekomendasiFragment"
+        android:name="org.d3if2107.splitbill.rekomendasi.RekomendasiFragment"
+        android:label="@string/rekomendasi"
+        tools:layout="@layout/fragment_rekomendasi"/>
 </navigation>
