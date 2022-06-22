@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Split Bill</string>
+    <string name="teks_sbill">Menurut Undang-Undang No. 7 Tahun 2021 tentang Harmonisasi Peraturan
+        Perpajakan, mulai 1 April 2022 PPN atau Pajak Pertambahan Nilai akan naik menjadi 11% </string>
+    <string name="teks_sbill2">Yuk split bill! ^^</string>
+    <string name="berapa_org">Jumlah orang</string>
+    <string name="orang_invalid">Jumlah orang invalid.</string>
+    <string name="tagihan_invalid">Input tagihan invalid.</string>
+    <string name="pajak_invalid">Input pajak invalid.</string>
+    <string name="tagihan">Jumlah Tagihan</string>
+    <string name="pajak">Termasuk Pajak ?</string>
+    <string name="rbutton1">Sudah</string>
+    <string name="rbutton2">Belum</string>
+    <string name="hitung_button">Hitung</string>
+    <string name="batal_button">Batal</string>
+    <string name="total_tagihan">Harga : %1$.2f</string>
+    <string name="tagihan_perorang">Patungan : %1$s</string>
+    <string name="empty_text">Belum ada data</string>
+    <string name="history">History</string>
+    <string name="delete_history">Delete History</string>
+    <string name="konfirmasi">Hapus semua history?</string>
+    <string name="hapus">Hapus</string>
+    <string name="batal">Batal</string>
+    <string name="data_orang">Jumlah Orang: %1$s</string>
+    <string name="data_tagihan">Jumlah Tagihan: %1$s</string>
+    <string name="share_button">Bagikan ke yang lain</string>
+    <string name="about_app">Tentang Aplikasi</string>
+    <string name="about_text">Split Bill merupakan aplikasi untuk memudahkan orang-orang
+        yang butuh patungan (biasanya yang sedang berkumpul), dengan membagi rata dari
+        total uang yang dikeluarkan untuk membayar bill atau tagihan yang dikalkulasikan
+        dengan tarif PPN atau Pajak Pertambahan Nilai</string>
+    <string name="share_template">Patungan per orang: Rp %1$s </string>
+    <string name="rekomendasi">Rekomendasi Tempat Makan</string>
+</resources>
