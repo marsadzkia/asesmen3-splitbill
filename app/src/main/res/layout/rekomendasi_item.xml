@@ -27,10 +27,11 @@
             android:id="@+id/text_rekomendasi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="14sp"
             android:text="@string/rekomendasi"
             android:textColor="@color/white"
             android:paddingLeft="70dp"
-            android:layout_gravity="center_vertical"/>
+            android:paddingRight="20dp"
+            android:layout_gravity="center"/>
     </androidx.cardview.widget.CardView>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
