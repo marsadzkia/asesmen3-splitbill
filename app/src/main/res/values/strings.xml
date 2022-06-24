@@ -32,4 +32,8 @@
     <string name="share_template">Patungan per orang: Rp %1$s </string>
     <string name="rekomendasi">Rekomendasi Tempat Makan</string>
     <string name="loading_error">Koneksi Error</string>
+    <string name="channel_nama">Updater</string>
+    <string name="channel_desc">Update data hewan otomatis</string>
+    <string name="notif_title">Split bill biar adil ^^</string>
+    <string name="notif_text">Ada transaksi bareng teman/saudara? yuk split bill biar adil :)</string>
 </resources>

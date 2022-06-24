@@ -11,6 +11,7 @@ import androidx.work.OneTimeWorkRequestBuilder
 import androidx.work.WorkManager
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
+import org.d3if2107.splitbill.MainActivity
 import org.d3if2107.splitbill.R
 import org.d3if2107.splitbill.internet.RekomendasiApi
 import org.d3if2107.splitbill.internet.RekomendasiStatus
@@ -47,7 +48,7 @@ class RekomendasiViewModel : ViewModel() {
             .build()
 
         WorkManager.getInstance(app).enqueueUniqueWork(
-            "updater", ExistingWorkPolicy.REPLACE, request
+            MainActivity.CHANNEL_ID, ExistingWorkPolicy.REPLACE, request
         )
     }
 }
