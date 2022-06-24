@@ -1,17 +1,23 @@
 package org.d3if2107.splitbill.rekomendasi
 
+import android.app.Application
 import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import androidx.work.ExistingWorkPolicy
+import androidx.work.OneTimeWorkRequestBuilder
+import androidx.work.WorkManager
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import org.d3if2107.splitbill.R
 import org.d3if2107.splitbill.internet.RekomendasiApi
 import org.d3if2107.splitbill.internet.RekomendasiStatus
+import org.d3if2107.splitbill.internet.UpdateWorker
 import org.d3if2107.splitbill.model.Rekomendasi
 import java.lang.Exception
+import java.util.concurrent.TimeUnit
 
 class RekomendasiViewModel : ViewModel() {
     private val data = MutableLiveData<List<Rekomendasi>>()
@@ -35,4 +41,13 @@ class RekomendasiViewModel : ViewModel() {
     }
     fun getData(): LiveData<List<Rekomendasi>> = data
     fun getStatus(): LiveData<RekomendasiStatus> = status
+    fun scheduleUpdater(app: Application) {
+        val request = OneTimeWorkRequestBuilder<UpdateWorker>()
+            .setInitialDelay(10, TimeUnit.SECONDS)
+            .build()
+
+        WorkManager.getInstance(app).enqueueUniqueWork(
+            "updater", ExistingWorkPolicy.REPLACE, request
+        )
+    }
 }

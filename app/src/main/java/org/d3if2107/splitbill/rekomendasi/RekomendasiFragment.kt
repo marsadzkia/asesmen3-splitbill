@@ -40,6 +40,8 @@ class RekomendasiFragment : Fragment() {
         viewModel.getStatus().observe(viewLifecycleOwner, {
             updateProgress(it)
         })
+
+        viewModel.scheduleUpdater(requireActivity().application)
     }
 
     private fun updateProgress(status: RekomendasiStatus) {
