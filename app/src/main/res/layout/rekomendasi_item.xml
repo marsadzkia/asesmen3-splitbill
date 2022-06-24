@@ -13,7 +13,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:cardBackgroundColor="@color/purple_700"
+        app:cardBackgroundColor="@color/lime_200"
         app:cardCornerRadius="10dp">
         <ImageView
             android:id="@+id/gambar_rekomendasi"
@@ -23,15 +23,17 @@
             android:contentDescription="@string/rekomendasi"
             tools:src="@drawable/ic_baseline_image_not_supported_24"
             android:layout_gravity="center_vertical"/>
+
         <TextView
             android:id="@+id/text_rekomendasi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="14sp"
-            android:text="@string/rekomendasi"
-            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:fontFamily="@font/cambo"
             android:paddingLeft="70dp"
             android:paddingRight="20dp"
-            android:layout_gravity="center"/>
+            android:text="@string/rekomendasi"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
