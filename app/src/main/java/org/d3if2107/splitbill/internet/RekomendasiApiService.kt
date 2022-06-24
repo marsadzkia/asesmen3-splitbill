@@ -33,3 +33,5 @@ object RekomendasiApi {
         return "$BASE_URL$nama.png"
     }
 }
+
+enum class RekomendasiStatus {LOADING, SUCCESS, FAILED}

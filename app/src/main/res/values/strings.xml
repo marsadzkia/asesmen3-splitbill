@@ -31,4 +31,5 @@
         dengan tarif PPN atau Pajak Pertambahan Nilai</string>
     <string name="share_template">Patungan per orang: Rp %1$s </string>
     <string name="rekomendasi">Rekomendasi Tempat Makan</string>
+    <string name="loading_error">Koneksi Error</string>
 </resources>

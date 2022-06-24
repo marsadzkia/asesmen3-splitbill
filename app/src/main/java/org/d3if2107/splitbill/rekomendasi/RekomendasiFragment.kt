@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import org.d3if2107.splitbill.databinding.FragmentRekomendasiBinding
+import org.d3if2107.splitbill.internet.RekomendasiStatus
 
 
 class RekomendasiFragment : Fragment() {
@@ -35,5 +36,24 @@ class RekomendasiFragment : Fragment() {
         viewModel.getData().observe(viewLifecycleOwner, {
             myAdapter.updateData(it)
         })
+
+        viewModel.getStatus().observe(viewLifecycleOwner, {
+            updateProgress(it)
+        })
+    }
+
+    private fun updateProgress(status: RekomendasiStatus) {
+        when (status) {
+            RekomendasiStatus.LOADING -> {
+                binding.loading.visibility = View.VISIBLE
+            }
+            RekomendasiStatus.SUCCESS -> {
+                binding.loading.visibility = View.GONE
+            }
+            RekomendasiStatus.FAILED -> {
+                binding.loading.visibility = View.GONE
+                binding.koneksiError.visibility = View.VISIBLE
+            }
+        }
     }
 }
